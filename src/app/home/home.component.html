@@ -1,194 +1,226 @@
 <div class="container my-5">
-    <div class="card bg-info">
-      <div class="card-header icon-welcome">Welcome <button class="close" disabled></button></div>
-      <div class="card-body">
-        <h1>Hi!</h1>
-        <p>I'm Shea Smith, a New Zealand software engineer with professional experience in developing Android apps,
-          ASP.NET Framework
-          APIs and Angular 2+ frontends.</p>
-        <p>Outside of this, I also enjoy writing (and tinkering!) with software in my free time. This has given me the
-          opportunity to try out a variety of (often obscure) frameworks and technologies, along with allowing me to
-          dabble in UI design and managing my own Linux based servers.</p>
-  
-        <a class="btn btn-primary d-inline-flex align-items-center" href="https://github.com/SheaSmith"><img
-            src="/assets/icons/computer_gear.png" class="mr-2" /> <span>Github</span></a>
-        <a class="mx-2 btn btn-primary d-inline-flex align-items-center"
-          href="https://www.linkedin.com/in/shea-smith-8a14331b2/"><img src="/assets/icons/connected_world-0.png"
-            class="mr-2" /> <span>LinkedIn</span></a>
-        <a class="btn btn-primary d-inline-flex align-items-center" href="mailto:shea@shea.nz"><img
-            src="/assets/icons/outlook_express-0.png" class="mr-2" /> <span>Email Me</span></a>
-      </div>
-    </div>
-  
-    <div class="alert alert-info mt-4 mb-3">
-      <div class="alert-heading">Projects</div>
-      <div class="alert-body">
-        This is a selection of both my personal projects and some public projects that I've contributed to professionally.
-        My personal projects tend to be focused around exploring new frameworks or technologies, hence their rather
-        diverse nature!
-      </div>
-    </div>
-  
-    <div class="row no-gutters mb-4">
-      <div class="col-12 col-lg-4 pr-lg-2 mb-2">
-        <div class="card bg-secondary h-100">
-          <div class="card-header icon-meteorology">Meteorology <button class="close" disabled></button></div>
-          <div class="card-body">
-            <p>Meteorology is a weather app for use with Weather Underground PWSs (Personal Weather Stations). It uses the
-              Weather Underground API to display the current conditions, a detailed forecast and extensive historical
-              data.</p>
-            <p>The app was built with intuitiveness and 'glancability' in mind. It presents important information, like
-              the temperature, in large text, along with elements like indiciative backgrounds for the type of weather.
-              However, detailed data is still present and available at a tap.</p>
-  
-  
-            <a class="btn btn-primary d-inline-flex align-items-center mr-2"
-              href="https://github.com/SheaSmith/Meteorology"><img src="/assets/icons/regedit_binary-0.png"
-                class="mr-2" /> <span>Github</span></a>
-            <a class="btn btn-primary d-inline-flex align-items-center"
-              href="https://play.google.com/store/apps/details?id=me.sheasmith.weatherstation"><img
-                src="/assets/icons/netmeeting-0.png" class="mr-2" />
-              <span>Google Play</span></a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-12 col-lg-8 pl-lg-2 mb-2">
-        <div class="card bg-secondary h-100">
-          <div class="card-header icon-meteorology">Meteorology <button class="close" disabled></button></div>
-          <div class="card-body">
-            <div class="jumbotron no-gutters m-0 p-1">
-              <img class="mw-100 cursor-pointer" (click)="imageClick($event)" src="/assets/screenshots/meterology.jpg" />
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-12 col-lg-8 pr-lg-2 mb-2">
-        <div class="card bg-secondary h-100">
-          <div class="card-header icon-telegraphy">Telegraphy <button class="close" disabled></button></div>
-          <div class="card-body">
-            <div class="jumbotron no-gutters m-0 p-1">
-              <img class="mw-100 cursor-pointer" (click)="imageClick($event)" src="/assets/screenshots/telegraphy.jpg" />
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-12 col-lg-4 pl-lg-2 mb-2">
-        <div class="card bg-secondary h-100">
-          <div class="card-header icon-telegraphy">Telegraphy <button class="close" disabled></button></div>
-          <div class="card-body">
-            <p>Telegraphy is an all-in-one app for listening to New Zealand radio. It collates stations from the two major
-              radio companies in New Zealand, along with a variety of smaller, independent stations.</p>
-            <p>Additionally, all stations display the currently playing song, along with prominent album art. Data is also
-              pulled from Mediaworks and NZME for getting the current show and song progress for their respective
-              stations, allowing the app to more closely resemble a traditional viewing experience.</p>
-            <p>Finally, the app also incorporates regional feeds, allowing a user to hear the stations that are the most
-              relevant to them.</p>
-  
-  
-            <a class="btn btn-primary d-inline-flex align-items-center mr-2"
-              href="https://github.com/SheaSmith/Meteorology"><img src="/assets/icons/regedit_binary-0.png"
-                class="mr-2" /> <span>Github</span></a>
-            <a class="btn btn-primary d-inline-flex align-items-center"
-              href="https://play.google.com/store/apps/details?id=me.sheasmith.nzradio"><img
-                src="/assets/icons/netmeeting-0.png" class="mr-2" />
-              <span>Google Play</span></a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-12 col-lg-4 mb-2">
-        <div class="card bg-secondary h-100">
-          <div class="card-header icon-checkin19">CHECKIN-19 <button class="close" disabled></button></div>
-          <div class="card-body">
-            <div class="card-image-top jumbotron no-gutters m-0 p-1 mb-2">
-              <img class="mw-100 cursor-pointer" (click)="imageClick($event)" src="/assets/screenshots/checkin-19.jpg" />
-            </div>
-            <p class="d-flex align-items-center"><img class="mr-2" src="/assets/icons/briefcase-3.png" /> <span>Developed
-                at <a href="http://digitalstock.co.nz">Digital Stock</a></span></p>
-            <p>CHECKIN-19 was originally developed as a safe and easy-to-use contactless visitor register system. We built
-              the first version of the app in late April in under two weeks and we soon saw usage explode to 250,000
-              check-ins a week by the end of Level 2.</p>
-            <p>It is now expanding to become a more general purpose visitor management solution, while also enabling COVID
-              tracing in other countries.</p>
-  
-  
-            <a class="btn btn-primary d-inline-flex align-items-center mr-2" href="https://checkin-19.com"><img
-                src="/assets/icons/html-1.png" class="mr-2" /> <span>Website</span></a>
-            <a class="btn btn-primary d-inline-flex align-items-center"
-              href="https://www.odt.co.nz/regions/southland/no-touch-logging-developed"><img
-                src="/assets/icons/newspaper.png" class="mr-2" /> <span>ODT
-                Article</span></a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-12 col-lg-4 px-lg-3 mb-2">
-        <div class="card bg-secondary h-100">
-          <div class="card-header icon-kplus">K+ <button class="close" disabled></button></div>
-          <div class="card-body">
-            <div class="card-image-top jumbotron no-gutters m-0 p-1 mb-2">
-              <img class="mw-100 cursor-pointer" (click)="imageClick($event)" src="/assets/screenshots/k-plus.jpg" />
-            </div>
-            <p>K+ is a third party app for a school portal type that is commonly used in many schools. It uses a
-              combination of undocumented APIs and HTML scraping in order to display information ranging from NCEA results
-              to timetables to daily notices.</p>
-            <p>K+ was a multi-year project, with the first iteration starting in 2016, based fully off HTML scraping,
-              before moving to primarily using the more stable API, along with a visual refresh.</p>
-  
-            <a class="btn btn-primary d-inline-flex align-items-center mr-2"
-              href="https://github.com/SheaSmith/k-plus"><img src="/assets/icons/regedit_binary-0.png" class="mr-2" />
-              <span>Github</span></a>
-            <a class="btn btn-primary d-inline-flex align-items-center"
-              href="https://play.google.com/store/apps/details?id=sheasmith.me.betterkamar"><img
-                src="/assets/icons/netmeeting-0.png" class="mr-2" />
-              <span>Google Play</span></a>
-            <a class="btn btn-primary d-inline-flex align-items-center"
-              href="https://documenter.getpostman.com/view/1593669/S1TU1d8Y?version=latest"><img
-                src="/assets/icons/xml-0.png" class="mr-2" />
-              <span>API Documentation</span></a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-12 col-lg-4 mb-2">
-        <div class="card bg-secondary h-100">
-          <div class="card-header icon-remote">Remote Control <button class="close" disabled></button></div>
-          <div class="card-body">
-            <div class="card-image-top jumbotron no-gutters m-0 p-1 mb-2">
-              <img class="mw-100 cursor-pointer" (click)="imageClick($event)" src="/assets/screenshots/remote.jpg" />
-            </div>
-            <p>Remote Control is a work-in-progress app that utilises the IR sensor on many Android phones to control
-              household devices (primarily TVs and related equipment). It was designed with the goal of being simple,
-              uncluttered and true to the original remote controls.</p>
-            <p>It has a modular design, which allows remotes to be defined in JSON files, rather than hardcoded into the
-              app. Future goals include user upload of files, and the ability to remember remote 'states' (e.g. store current temperature).</p>
-  
-            <a class="btn btn-primary d-inline-flex align-items-center mr-2"
-              href="https://github.com/SheaSmith/RemoteControl"><img src="/assets/icons/regedit_binary-0.png" class="mr-2" />
-              <span>Github</span></a>
-          </div>
-        </div>
-      </div>
-  
-    </div>
-  
-  </div>
-  
-  <div #lightbox class="modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title icon-image">View image</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img src="{{currentImage}}" class="mw-100">
-        </div>
-      </div>
+  <div class="card bg-info">
+    <div class="card-header icon-welcome">Welcome <button class="close" disabled></button></div>
+    <div class="card-body">
+      <h1>Hi!</h1>
+      <p>I'm Shea Smith, a New Zealand software engineer with professional experience in developing Android apps,
+        ASP.NET Framework
+        APIs and Angular 2+ frontends.</p>
+      <p>Outside of this, I also enjoy writing (and tinkering!) with software in my free time. This has given me the
+        opportunity to try out a variety of (often obscure) frameworks and technologies, along with allowing me to
+        dabble in UI design and managing my own Linux based servers.</p>
+
+      <a class="btn btn-primary d-inline-flex align-items-center" href="https://github.com/SheaSmith"><img
+          src="/assets/icons/computer_gear.png" class="mr-2" /> <span>Github</span></a>
+      <a class="mx-2 btn btn-primary d-inline-flex align-items-center"
+        href="https://www.linkedin.com/in/shea-smith-8a14331b2/"><img src="/assets/icons/connected_world-0.png"
+          class="mr-2" /> <span>LinkedIn</span></a>
+      <a class="btn btn-primary d-inline-flex align-items-center" href="mailto:shea@shea.nz"><img
+          src="/assets/icons/outlook_express-0.png" class="mr-2" /> <span>Email Me</span></a>
     </div>
   </div>
+
+  <div class="alert alert-info mt-4 mb-3">
+    <div class="alert-heading">Projects</div>
+    <div class="alert-body">
+      This is a selection of both my personal projects and some public projects that I've contributed to professionally.
+      My personal projects tend to be focused around exploring new frameworks or technologies, hence their rather
+      diverse nature!
+    </div>
+  </div>
+
+  <div class="row no-gutters mb-4">
+    <div class="col-12 col-lg-8 pr-lg-2 mb-2">
+      <div class="card bg-secondary h-100">
+        <div class="card-header icon-nzxmltv">NZXMLTV <button class="close" disabled></button></div>
+        <div class="card-body">
+          <div class="jumbotron no-gutters m-0 p-1">
+            <img class="mw-100 cursor-pointer" (click)="imageClick($event)" src="/assets/screenshots/nzxmltv.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-4 pl-lg-2 mb-2">
+      <div class="card bg-secondary h-100">
+        <div class="card-header icon-nzxmltv">NZXMLTV <button class="close" disabled></button></div>
+        <div class="card-body">
+          <p>NZXMLTV is a custom XML based EPG for use in software like Plex, Kodi, Emby or Jellyfin.</p>
+          <p>It takes program guide data from Freeview, SKY and some overseas IPTV providers. This is then combined with
+            metadata from a variety of sources, both from NZ and international sources, to provide images and other rich
+            metadata about each programme. This is in conjunction with hundreds of lines of hand crafted logic dealing
+            with dozens of unique edgecases for New Zealand.</p>
+          <p>NZXMLTV has around 1,000 unique users and transfers nearly 300 GB of data a month (according to Cloudflare
+            analytics), providing all of them with a quality of programme guide without parallels in New Zealand.</p>
+
+          <a class="btn btn-primary d-inline-flex align-items-center" href="https://nzxmltv.com"><img
+              src="/assets/icons/world-0.png" class="mr-2" />
+            <span>Website</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-4 pr-lg-2 mb-2">
+      <div class="card bg-secondary h-100">
+        <div class="card-header icon-meteorology">Meteorology <button class="close" disabled></button></div>
+        <div class="card-body">
+          <p>Meteorology is a weather app for use with Weather Underground PWSs (Personal Weather Stations). It uses the
+            Weather Underground API to display the current conditions, a detailed forecast and extensive historical
+            data.</p>
+          <p>The app was built with intuitiveness and 'glancability' in mind. It presents important information, like
+            the temperature, in large text, along with elements like indiciative backgrounds for the type of weather.
+            However, detailed data is still present and available at a tap.</p>
+
+
+          <a class="btn btn-primary d-inline-flex align-items-center mr-2"
+            href="https://github.com/SheaSmith/Meteorology"><img src="/assets/icons/regedit_binary-0.png"
+              class="mr-2" /> <span>Github</span></a>
+          <a class="btn btn-primary d-inline-flex align-items-center"
+            href="https://play.google.com/store/apps/details?id=me.sheasmith.weatherstation"><img
+              src="/assets/icons/netmeeting-0.png" class="mr-2" />
+            <span>Google Play</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-8 pl-lg-2 mb-2">
+      <div class="card bg-secondary h-100">
+        <div class="card-header icon-meteorology">Meteorology <button class="close" disabled></button></div>
+        <div class="card-body">
+          <div class="jumbotron no-gutters m-0 p-1">
+            <img class="mw-100 cursor-pointer" (click)="imageClick($event)" src="/assets/screenshots/meterology.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-8 pr-lg-2 mb-2">
+      <div class="card bg-secondary h-100">
+        <div class="card-header icon-telegraphy">Telegraphy <button class="close" disabled></button></div>
+        <div class="card-body">
+          <div class="jumbotron no-gutters m-0 p-1">
+            <img class="mw-100 cursor-pointer" (click)="imageClick($event)" src="/assets/screenshots/telegraphy.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-4 pl-lg-2 mb-2">
+      <div class="card bg-secondary h-100">
+        <div class="card-header icon-telegraphy">Telegraphy <button class="close" disabled></button></div>
+        <div class="card-body">
+          <p>Telegraphy is an all-in-one app for listening to New Zealand radio. It collates stations from the two major
+            radio companies in New Zealand, along with a variety of smaller, independent stations.</p>
+          <p>Additionally, all stations display the currently playing song, along with prominent album art. Data is also
+            pulled from Mediaworks and NZME for getting the current show and song progress for their respective
+            stations, allowing the app to more closely resemble a traditional viewing experience.</p>
+          <p>Finally, the app also incorporates regional feeds, allowing a user to hear the stations that are the most
+            relevant to them.</p>
+
+
+          <a class="btn btn-primary d-inline-flex align-items-center mr-2"
+            href="https://github.com/SheaSmith/Meteorology"><img src="/assets/icons/regedit_binary-0.png"
+              class="mr-2" /> <span>Github</span></a>
+          <a class="btn btn-primary d-inline-flex align-items-center"
+            href="https://play.google.com/store/apps/details?id=me.sheasmith.nzradio"><img
+              src="/assets/icons/netmeeting-0.png" class="mr-2" />
+            <span>Google Play</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-4 mb-2">
+      <div class="card bg-secondary h-100">
+        <div class="card-header icon-checkin19">CHECKIN-19 <button class="close" disabled></button></div>
+        <div class="card-body">
+          <div class="card-image-top jumbotron no-gutters m-0 p-1 mb-2">
+            <img class="mw-100 cursor-pointer" (click)="imageClick($event)" src="/assets/screenshots/checkin-19.jpg" />
+          </div>
+          <p class="d-flex align-items-center"><img class="mr-2" src="/assets/icons/briefcase-3.png" /> <span>Developed
+              at <a href="http://digitalstock.co.nz">Digital Stock</a></span></p>
+          <p>CHECKIN-19 was originally developed as a safe and easy-to-use contactless visitor register system. We built
+            the first version of the app in late April in under two weeks and we soon saw usage explode to 250,000
+            check-ins a week by the end of Level 2.</p>
+          <p>It is now expanding to become a more general purpose visitor management solution, while also enabling COVID
+            tracing in other countries.</p>
+
+
+          <a class="btn btn-primary d-inline-flex align-items-center mr-2" href="https://checkin-19.com"><img
+              src="/assets/icons/html-1.png" class="mr-2" /> <span>Website</span></a>
+          <a class="btn btn-primary d-inline-flex align-items-center"
+            href="https://www.odt.co.nz/regions/southland/no-touch-logging-developed"><img
+              src="/assets/icons/newspaper.png" class="mr-2" /> <span>ODT
+              Article</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-4 px-lg-3 mb-2">
+      <div class="card bg-secondary h-100">
+        <div class="card-header icon-kplus">K+ <button class="close" disabled></button></div>
+        <div class="card-body">
+          <div class="card-image-top jumbotron no-gutters m-0 p-1 mb-2">
+            <img class="mw-100 cursor-pointer" (click)="imageClick($event)" src="/assets/screenshots/k-plus.jpg" />
+          </div>
+          <p>K+ is a third party app for a school portal type that is commonly used in many schools. It uses a
+            combination of undocumented APIs and HTML scraping in order to display information ranging from NCEA results
+            to timetables to daily notices.</p>
+          <p>K+ was a multi-year project, with the first iteration starting in 2016, based fully off HTML scraping,
+            before moving to primarily using the more stable API, along with a visual refresh.</p>
+
+          <a class="btn btn-primary d-inline-flex align-items-center mr-2"
+            href="https://github.com/SheaSmith/k-plus"><img src="/assets/icons/regedit_binary-0.png" class="mr-2" />
+            <span>Github</span></a>
+          <a class="btn btn-primary d-inline-flex align-items-center"
+            href="https://play.google.com/store/apps/details?id=sheasmith.me.betterkamar"><img
+              src="/assets/icons/netmeeting-0.png" class="mr-2" />
+            <span>Google Play</span></a>
+          <a class="btn btn-primary d-inline-flex align-items-center"
+            href="https://documenter.getpostman.com/view/1593669/S1TU1d8Y?version=latest"><img
+              src="/assets/icons/xml-0.png" class="mr-2" />
+            <span>API Documentation</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-4 mb-2">
+      <div class="card bg-secondary h-100">
+        <div class="card-header icon-remote">Remote Control <button class="close" disabled></button></div>
+        <div class="card-body">
+          <div class="card-image-top jumbotron no-gutters m-0 p-1 mb-2">
+            <img class="mw-100 cursor-pointer" (click)="imageClick($event)" src="/assets/screenshots/remote.jpg" />
+          </div>
+          <p>Remote Control is a work-in-progress app that utilises the IR sensor on many Android phones to control
+            household devices (primarily TVs and related equipment). It was designed with the goal of being simple,
+            uncluttered and true to the original remote controls.</p>
+          <p>It has a modular design, which allows remotes to be defined in JSON files, rather than hardcoded into the
+            app. Future goals include user upload of files, and the ability to remember remote 'states' (e.g. store
+            current temperature).</p>
+
+          <a class="btn btn-primary d-inline-flex align-items-center mr-2"
+            href="https://github.com/SheaSmith/RemoteControl"><img src="/assets/icons/regedit_binary-0.png"
+              class="mr-2" />
+            <span>Github</span></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div #lightbox class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title icon-image">View image</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="{{currentImage}}" class="mw-100">
+      </div>
+    </div>
+  </div>
+</div>

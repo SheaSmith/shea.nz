@@ -1,14 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
-$blue: #0000A8; // #337ab7
-$green: #00A857;
-$cyan:    #57A8A8;
-$yellow: #A8A857;
-$red: #A80057;
-$purple: #A857A8;
+$blue: #0000a8; // #337ab7
+$green: #00a857;
+$cyan: #57a8a8;
+$yellow: #a8a857;
+$red: #a80057;
+$purple: #a857a8;
 
-$grey-600: #87888F;
-$light: #C0C7C8;
+$grey-600: #87888f;
+$light: #c0c7c8;
 $dark: #000000;
 
 $yiq-text-dark: $dark;
@@ -20,22 +20,22 @@ $enable-shadows: false;
 $enable-gradients: false;
 $enable-transitions: false;
 
-$body-bg: #57A8A8;
+$body-bg: #57a8a8;
 $body-color: #ffffff;
 
-$link-color: #00A857;
+$link-color: #00a857;
 $link-decoration: underline dashed;
 $link-hover-color: $link-color;
 $link-hover-decoration: $link-decoration;
 $emphasized-link-hover-darken-percentage: 0%;
 
 @font-face {
-    font-family: 'Fixedsys';
-    src: url('/assets/fixedsys.ttf') format('truetype');
+    font-family: "Fixedsys";
+    src: url("/assets/fixedsys.ttf") format("truetype");
 }
 
-$font-family-sans-serif: 'Microsoft Sans Serif', sans-serif;
-$font-family-monospace: 'Fixedsys', monospace;
+$font-family-sans-serif: "Microsoft Sans Serif", sans-serif;
+$font-family-monospace: "Fixedsys", monospace;
 
 $font-size-base: 1rem;
 $font-size-lg: 1.125rem;
@@ -65,12 +65,12 @@ $lead-font-size: $font-size-base;
 
 $small-font-size: $font-size-sm;
 
-$text-muted: #87888F;
+$text-muted: #87888f;
 
 $blockquote-small-color: $dark;
 $blockquote-font-size: $font-size-base;
 
-$hr-border-color: #87888F;
+$hr-border-color: #87888f;
 $hr-margin-y: 0;
 
 $input-btn-padding-y: 0.2rem;
@@ -86,7 +86,7 @@ $custom-select-indicator: url("/assets/dropdown.svg");
 $custom-control-indicator-checked-color: black;
 
 $custom-control-indicator-disabled-bg: $light;
-$custom-control-label-disabled-color: #87888F;
+$custom-control-label-disabled-color: #87888f;
 
 $custom-range-thumb-width: 0.5rem;
 $custom-range-thumb-height: 1.4rem;
@@ -126,7 +126,8 @@ hr {
     font-weight: normal;
 }
 
-.table td, .table th {
+.table td,
+.table th {
     border-bottom: thin outset black !important;
     border-width: thin;
     border-style: outset;
@@ -149,31 +150,51 @@ hr {
     box-shadow: 1px 1px 0 0 #fff;
 }
 
-.btn, .page-link, .navbar .nav-link, .navbar-brand {
+.btn,
+.page-link,
+.navbar .nav-link,
+.navbar-brand {
     border: 2px outset white;
     box-shadow: 1px 1px 0 0 #000;
     background-color: $light;
 }
 
-.btn.active, .page-item.active .page-link, .navbar .nav-item.active .nav-link {
+.btn.active,
+.page-item.active .page-link,
+.navbar .nav-item.active .nav-link {
     border: 2px outset black;
     border-color: black !important;
     background-color: $light !important;
     box-shadow: 0 0 0 1px #000;
 }
 
-.btn:hover, .page-link:hover, .close:hover {
+.btn:hover,
+.page-link:hover,
+.close:hover {
     border: 2px outset white;
     background-color: $light;
 }
 
-.btn:focus, .page-link:focus, .close:focus, .navbar .nav-link:focus, .navbar-brand:focus {
+.btn:focus {
+    border: 2px outset white !important;
+    box-shadow: 1px 1px 0 0 #000 !important;
+    background-color: $light !important;
+}
+
+.btn:active,
+.page-link:active,
+.close:active,
+.navbar .nav-link:active,
+.navbar-brand:active {
     border: 2px inset white !important;
     background-color: $light !important;
     box-shadow: 0 0 0 1px #000 !important;
 }
 
-.btn.disabled, .btn[disabled], .page-item.disabled .page-link, .navbar .nav-item.disabled .nav-link {
+.btn.disabled,
+.btn[disabled],
+.page-item.disabled .page-link,
+.navbar .nav-item.disabled .nav-link {
     border: 2px outset white;
     background-color: $light;
     color: $grey-600 !important;
@@ -192,6 +213,9 @@ hr {
     color: $dark;
 }
 
+.btn-primary:active {
+    color: $dark !important;
+}
 .btn-primary:focus {
     color: $dark !important;
 }
@@ -205,10 +229,12 @@ hr {
 .btn-secondary:hover {
     color: $grey-600;
 }
+.btn-secondary:active {
+    color: $grey-600 !important;
+}
 .btn-secondary:focus {
     color: $grey-600 !important;
 }
-
 
 .btn-success {
     color: $green;
@@ -218,6 +244,9 @@ hr {
 }
 .btn-success:hover {
     color: $green;
+}
+.btn-success:active {
+    color: $green !important;
 }
 .btn-success:focus {
     color: $green !important;
@@ -232,6 +261,9 @@ hr {
 .btn-info:hover {
     color: $cyan;
 }
+.btn-info:active {
+    color: $cyan !important;
+}
 .btn-info:focus {
     color: $cyan !important;
 }
@@ -244,6 +276,9 @@ hr {
 }
 .btn-warning:hover {
     color: $yellow;
+}
+.btn-warning:active {
+    color: $yellow !important;
 }
 .btn-warning:focus {
     color: $yellow !important;
@@ -258,7 +293,7 @@ hr {
 .btn-danger:hover {
     color: $red;
 }
-.btn-danger:focus {
+.btn-danger:active {
     color: $red !important;
 }
 
@@ -289,10 +324,10 @@ hr {
     box-shadow: 1px 1px 0 0 #fff;
 }
 
-.custom-control-input[disabled] ~ .custom-control-label::before, .custom-control-input:disabled ~ .custom-control-label::before {
+.custom-control-input[disabled] ~ .custom-control-label::before,
+.custom-control-input:disabled ~ .custom-control-label::before {
     background-color: $light;
 }
-
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
     border: 2px inset black;
@@ -325,22 +360,25 @@ hr {
     box-shadow: 1px 1px 0 0 #000;
 }
 
-.custom-range::-moz-range-thumb:active, .custom-range:disabled::-moz-range-thumb {
-    background-image: url('/assets/slider_texture.png');
+.custom-range::-moz-range-thumb:active,
+.custom-range:disabled::-moz-range-thumb {
+    background-image: url("/assets/slider_texture.png");
     background-color: $light;
     background-repeat: repeat;
     background-clip: border-box;
 }
 
-.custom-range::-webkit-slider-thumb:active, .custom-range:disabled::-webkit-slider-thumb {
-    background-image: url('/assets/slider_texture.png');
+.custom-range::-webkit-slider-thumb:active,
+.custom-range:disabled::-webkit-slider-thumb {
+    background-image: url("/assets/slider_texture.png");
     background-color: $light;
     background-repeat: repeat;
     background-clip: border-box;
 }
 
-.custom-range::-ms-thumb:active, .custom-range:disabled::-ms-thumb {
-    background-image: url('/assets/slider_texture.png');
+.custom-range::-ms-thumb:active,
+.custom-range:disabled::-ms-thumb {
+    background-image: url("/assets/slider_texture.png");
     background-color: $light;
     background-repeat: repeat;
     background-clip: border-box;
@@ -350,7 +388,8 @@ hr {
     border: 2px inset white;
 }
 
-.nav-tabs .nav-link, .nav-tabs .nav-link.disabled {
+.nav-tabs .nav-link,
+.nav-tabs .nav-link.disabled {
     color: $dark;
     padding: 0.2rem 0.4rem;
     border-top: 1px solid white;
@@ -446,7 +485,6 @@ hr {
     text-decoration: none !important;
 }
 
-
 .breadcrumb-item + .breadcrumb-item::before {
     padding-right: 0rem;
     color: black;
@@ -477,92 +515,81 @@ hr {
 .alert-warning::before {
     left: 36px;
     position: absolute;
-    content: url('/assets/icons/msg_warning-0.png');
+    content: url("/assets/icons/msg_warning-0.png");
 }
 
 .alert-warning {
     background: white;
-  background-image:
-    radial-gradient(#FFFF00 30%, transparent 0), 
-    radial-gradient(#FFFF00 30%, transparent 0);
-  background-size: 4px 4px;
-  background-position: 0 0, 2px 2px;
+    background-image: radial-gradient(#ffff00 30%, transparent 0), radial-gradient(#ffff00 30%, transparent 0);
+    background-size: 4px 4px;
+    background-position: 0 0, 2px 2px;
 }
 
 .alert-danger::before {
     left: 36px;
     position: absolute;
-    content: url('/assets/icons/msg_error-0.png');
+    content: url("/assets/icons/msg_error-0.png");
 }
 
 .alert-danger {
     background: white;
-  background-image:
-    radial-gradient(#ffcfcf 30%, transparent 0), 
-    radial-gradient(#ffcfcf 30%, transparent 0);
-  background-size: 4px 4px;
-  background-position: 0 0, 2px 2px;
+    background-image: radial-gradient(#ffcfcf 30%, transparent 0), radial-gradient(#ffcfcf 30%, transparent 0);
+    background-size: 4px 4px;
+    background-position: 0 0, 2px 2px;
 }
 
 .alert-success::before {
     left: 36px;
     position: absolute;
-    content: url('/assets/icons/check-0.png');
+    content: url("/assets/icons/check-0.png");
 }
 
 .alert-success {
     background: white;
-  background-image:
-    radial-gradient(#9f9 30%, transparent 0), 
-    radial-gradient(#9f9 30%, transparent 0);
-  background-size: 4px 4px;
-  background-position: 0 0, 2px 2px;
+    background-image: radial-gradient(#9f9 30%, transparent 0), radial-gradient(#9f9 30%, transparent 0);
+    background-size: 4px 4px;
+    background-position: 0 0, 2px 2px;
 }
 
-.alert-info::before, .alert-primary::before, .alert-secondary::before, .alert-light::before {
+.alert-info::before,
+.alert-primary::before,
+.alert-secondary::before,
+.alert-light::before {
     left: 36px;
     position: absolute;
-    content: url('/assets/icons/msg_information-0.png');
+    content: url("/assets/icons/msg_information-0.png");
 }
 
 .alert-info {
     background: white;
-  background-image:
-    radial-gradient(#A4FFFF 30%, transparent 0), 
-    radial-gradient(#A4FFFF 30%, transparent 0);
-  background-size: 4px 4px;
-  background-position: 0 0, 2px 2px;
+    background-image: radial-gradient(#a4ffff 30%, transparent 0), radial-gradient(#a4ffff 30%, transparent 0);
+    background-size: 4px 4px;
+    background-position: 0 0, 2px 2px;
 }
 
 .alert-primary {
     background: white;
-  background-image:
-    radial-gradient(#dedeff 30%, transparent 0), 
-    radial-gradient(#dedeff 30%, transparent 0);
-  background-size: 4px 4px;
-  background-position: 0 0, 2px 2px;
+    background-image: radial-gradient(#dedeff 30%, transparent 0), radial-gradient(#dedeff 30%, transparent 0);
+    background-size: 4px 4px;
+    background-position: 0 0, 2px 2px;
 }
 
 .alert-secondary {
     background: white;
-  background-image:
-    radial-gradient(#d0d0d0 30%, transparent 0), 
-    radial-gradient(#d0d0d0 30%, transparent 0);
-  background-size: 4px 4px;
-  background-position: 0 0, 2px 2px;
+    background-image: radial-gradient(#d0d0d0 30%, transparent 0), radial-gradient(#d0d0d0 30%, transparent 0);
+    background-size: 4px 4px;
+    background-position: 0 0, 2px 2px;
 }
 
 .alert-light {
     background: white;
-  background-image:
-    radial-gradient(#e1e1e1 30%, transparent 0), 
-    radial-gradient(#e1e1e1 30%, transparent 0);
-  background-size: 4px 4px;
-  background-position: 0 0, 2px 2px;
+    background-image: radial-gradient(#e1e1e1 30%, transparent 0), radial-gradient(#e1e1e1 30%, transparent 0);
+    background-size: 4px 4px;
+    background-position: 0 0, 2px 2px;
 }
 
 .close::before {
-    background: url('/assets/close.svg');
+    background: url("/assets/close.svg");
     background-size: 10px 10px;
     height: 16px;
     width: 16px;
@@ -572,7 +599,8 @@ hr {
     background-position: center;
 }
 
-.close, button.close {
+.close,
+button.close {
     height: 20px;
     width: 20px;
     overflow: hidden;
@@ -616,11 +644,18 @@ hr {
     border: 0;
 }
 .list-group-item-action:hover {
+    color: black;
+    background-color: white;
+}
+.list-group-item-action.active:hover {
     color: white;
-    background-color: $blue;
+    background-color: $primary;
 }
 
-.card-header, .modal-header, .popover-header, .toast-header {
+.card-header,
+.modal-header,
+.popover-header,
+.toast-header {
     padding: 0 0.2rem;
     color: white !important;
     border: 0;
@@ -628,59 +663,107 @@ hr {
     font-weight: bold;
 }
 
-.card, .modal-content, .popover, .toast {
+.card,
+.modal-content,
+.popover,
+.toast {
     background-color: $light !important;
     color: black;
     border: 3px outset $light;
     box-shadow: 1px 1px 0 0 black, -1px -1px 0 0 white;
 }
 
-.card-body, .modal-body, .popover-body, .toast-body {
+.card-body,
+.modal-body,
+.popover-body,
+.toast-body {
     color: black;
     padding: 0.5rem;
 }
 
-.bg-secondary .card-header, .bg-secondary .modal-header, .bg-secondary .popover-header, .bg-secondary .toast-header {
+.bg-secondary .card-header,
+.bg-secondary .modal-header,
+.bg-secondary .popover-header,
+.bg-secondary .toast-header {
     background-color: $grey-600;
 }
 
-.bg-warning .card-body::before, .bg-warning .modal-body::before, .bg-warning .popover-body::before, .bg-warning .toast-body::before {
+.bg-warning .card-body::before,
+.bg-warning .modal-body::before,
+.bg-warning .popover-body::before,
+.bg-warning .toast-body::before {
     left: 10px;
     position: absolute;
-    content: url('/assets/icons/msg_warning-0.png');
+    content: url("/assets/icons/msg_warning-0.png");
 }
 
-.bg-success .card-body::before, .bg-success .modal-body::before, .bg-success .popover-body::before, .bg-success .toast-body::before {
+.bg-success .card-body::before,
+.bg-success .modal-body::before,
+.bg-success .popover-body::before,
+.bg-success .toast-body::before {
     left: 10px;
     position: absolute;
-    content: url('/assets/icons/check-0.png');
+    content: url("/assets/icons/check-0.png");
 }
 
-.bg-danger .card-body::before, .bg-danger .modal-body::before, .bg-danger .popover-body::before, .bg-danger .toast-body::before {
+.bg-danger .card-body::before,
+.bg-danger .modal-body::before,
+.bg-danger .popover-body::before,
+.bg-danger .toast-body::before {
     left: 10px;
     position: absolute;
-    content: url('/assets/icons/msg_error-0.png');
+    content: url("/assets/icons/msg_error-0.png");
 }
 
-.bg-info .card-body::before, .bg-dark .card-body::before, .bg-light .card-body::before, 
-.bg-info .modal-body::before, .bg-info .popover-body::before, .bg-info .toast-body::before, 
-.bg-light .modal-body::before, .bg-light .popover-body::before, .bg-light .toast-body::before, 
-.bg-dark .modal-body::before, .bg-dark .popover-body::before, .bg-dark .toast-body::before {
+.bg-info .card-body::before,
+.bg-dark .card-body::before,
+.bg-light .card-body::before,
+.bg-info .modal-body::before,
+.bg-info .popover-body::before,
+.bg-info .toast-body::before,
+.bg-light .modal-body::before,
+.bg-light .popover-body::before,
+.bg-light .toast-body::before,
+.bg-dark .modal-body::before,
+.bg-dark .popover-body::before,
+.bg-dark .toast-body::before {
     left: 10px;
     position: absolute;
-    content: url('/assets/icons/msg_information-0.png');
+    content: url("/assets/icons/msg_information-0.png");
 }
 
-.bg-warning .card-body, .bg-danger .card-body, .bg-info .card-body, .bg-dark .card-body, .bg-light .card-body, .bg-success .card-body,
-.bg-warning .modal-body, .bg-danger .modal-body, .bg-info .modal-body, .bg-dark .modal-body, .bg-light .modal-body, .bg-success .modal-body,
-.bg-warning .popover-body, .bg-danger .popover-body, .bg-info .popover-body, .bg-dark .popover-body, .bg-light .popover-body, .bg-success .popover-body,
-.bg-warning .toast-body, .bg-danger .toast-body, .bg-info .toast-body, .bg-dark .toast-body, .bg-light .toast-body, .bg-success .toast-body {
+.bg-warning .card-body,
+.bg-danger .card-body,
+.bg-info .card-body,
+.bg-dark .card-body,
+.bg-light .card-body,
+.bg-success .card-body,
+.bg-warning .modal-body,
+.bg-danger .modal-body,
+.bg-info .modal-body,
+.bg-dark .modal-body,
+.bg-light .modal-body,
+.bg-success .modal-body,
+.bg-warning .popover-body,
+.bg-danger .popover-body,
+.bg-info .popover-body,
+.bg-dark .popover-body,
+.bg-light .popover-body,
+.bg-success .popover-body,
+.bg-warning .toast-body,
+.bg-danger .toast-body,
+.bg-info .toast-body,
+.bg-dark .toast-body,
+.bg-light .toast-body,
+.bg-success .toast-body {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 56px;
 }
 
-.card-header::before, .modal-icon::before, .popover-header::before {
+.card-header::before,
+.modal-icon::before,
+.popover-header::before {
     vertical-align: middle;
     margin-right: 0.2rem;
     display: inline-block;
@@ -689,7 +772,12 @@ hr {
     margin-bottom: 5px;
 }
 
-.card-header .close, .card-header .window-control, .modal-header .close, .modal-header .window-control, .popover-header .close, .popover-header .window-control {
+.card-header .close,
+.card-header .window-control,
+.modal-header .close,
+.modal-header .window-control,
+.popover-header .close,
+.popover-header .window-control {
     margin: 0.1rem 0 0 0;
 }
 
@@ -710,7 +798,8 @@ hr {
     margin-bottom: 5px;
 }
 
-.window-control[disabled] img, .close[disabled]::before {
+.window-control[disabled] img,
+.close[disabled]::before {
     opacity: 0.5;
 }
 
@@ -742,9 +831,7 @@ hr {
 
 .tooltip-inner {
     background: white;
-    background-image:
-    radial-gradient(#FFFF00 30%, transparent 0), 
-    radial-gradient(#FFFF00 30%, transparent 0);
+    background-image: radial-gradient(#ffff00 30%, transparent 0), radial-gradient(#ffff00 30%, transparent 0);
     background-size: 4px 4px;
     background-position: 0 0, 2px 2px;
     color: black;
@@ -756,7 +843,8 @@ hr {
     display: none;
 }
 
-.toast-header .close, .toast-header .window-control {
+.toast-header .close,
+.toast-header .window-control {
     margin-bottom: 0 !important;
     margin-top: 0;
     margin-right: 0;
@@ -802,16 +890,43 @@ var {
     text-decoration: none;
 }
 
-.navbar .nav-link, .navbar-brand {
+.navbar .nav-link,
+.navbar-brand {
     padding: 0.2rem;
     margin-right: 0.2rem;
     color: black !important;
 }
 
 .navbar .nav-item.active .nav-link {
-    background-image: url('/assets/nav_texture.png');
+    background-image: url("/assets/nav_texture.png");
 }
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+option:checked {
+    background-color: $primary !important;
+    color: white !important;
+}
+
+option {
+    color: black;
+}
+
+option:hover,
+option:focus,
+option:active {
+    background-color: transparent !important;
+    color: black !important;
+}
+
+option:checked, .custom-select:not([multiple]) > option:hover {
+    background: $primary linear-gradient(0deg, $primary 0%, $primary 100%) !important;
+    color: white !important;
+    
+}
+
+.custom-select {
+    padding: 0px !important;
 }
