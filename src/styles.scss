@@ -930,3 +930,17 @@ option:checked, .custom-select:not([multiple]) > option:hover {
 .custom-select {
     padding: 0px !important;
 }
+
+html, body {
+    cursor: default;
+}
+
+::selection {
+    background-color: #000000;
+    color: white;
+}
+
+::-moz-selection {
+    background-color: #000000;
+    color: white;
+}

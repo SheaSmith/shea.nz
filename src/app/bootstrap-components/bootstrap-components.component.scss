@@ -1,35 +1,35 @@
 .alias {cursor: alias;}
-.all-scroll {cursor: all-scroll;}
+.all-scroll {cursor: url('/assets/cursors/all-scroll.png') 16 16, all-scroll;}
 .auto {cursor: auto;}
 .cell {cursor: cell;}
-.context-menu {cursor: context-menu;}
+.context-menu {cursor: url('/assets/cursors/arrow.png') 2 4, context-menu;}
 .col-resize {cursor: col-resize;}
 .copy {cursor: copy;}
 .crosshair {cursor: crosshair;}
-.default {cursor: default;}
-.e-resize {cursor: e-resize;}
-.ew-resize {cursor: ew-resize;}
+.default {cursor: url('/assets/cursors/arrow.png') 2 4, default;}
+.e-resize {cursor: url('/assets/cursors/e-resize.png') 16 16, e-resize;}
+.ew-resize {cursor: url('/assets/cursors/e-resize.png') 16 16, ew-resize;}
 .grab {cursor: -webkit-grab; cursor: grab;}
 .grabbing {cursor: -webkit-grabbing; cursor: grabbing;}
-.help {cursor: help;}
-.move {cursor: move;}
-.n-resize {cursor: n-resize;}
-.ne-resize {cursor: ne-resize;}
-.nesw-resize {cursor: nesw-resize;}
-.ns-resize {cursor: ns-resize;}
-.nw-resize {cursor: nw-resize;}
-.nwse-resize {cursor: nwse-resize;}
-.no-drop {cursor: no-drop;}
+.help {cursor: url('/assets/cursors/help.png') 2 4, help;}
+.move {cursor: url('/assets/cursors/all-scroll.png') 16 16, move;}
+.n-resize {cursor: url('/assets/cursors/n-resize.png') 16 16, n-resize;}
+.ne-resize {cursor: url('/assets/cursors/ne-resize.png') 16 16, ne-resize;}
+.nesw-resize {cursor:  url('/assets/cursors/ne-resize.png') 16 16, nesw-resize;}
+.ns-resize {cursor: url('/assets/cursors/n-resize.png') 16 16, ns-resize;}
+.nw-resize {cursor: url('/assets/cursors/nw-resize.png') 16 16, nw-resize;}
+.nwse-resize {cursor: url('/assets/cursors/nw-resize.png') 16 16, nwse-resize;}
+.no-drop {cursor: url('/assets/cursors/no-drop.png') 16 16, no-drop;}
 .none {cursor: none;}
-.not-allowed {cursor: not-allowed;}
-.pointer {cursor: pointer;}
-.progress {cursor: progress;}
+.not-allowed {cursor: url('/assets/cursors/no-drop.png') 16 16, not-allowed;}
+.pointer {cursor: url('/assets/cursors/link.png') 10 9, pointer;}
+.progress {cursor: url('/assets/cursors/progress.png') 2 4, progress;}
 .row-resize {cursor: row-resize;}
-.s-resize {cursor: s-resize;}
-.se-resize {cursor: se-resize;}
-.sw-resize {cursor: sw-resize;}
+.s-resize {cursor: url('/assets/cursors/n-resize.png') 16 16, s-resize;}
+.se-resize {cursor: url('/assets/cursors/nw-resize.png') 16 16, se-resize;}
+.sw-resize {cursor: url('/assets/cursors/ne-resize.png') 16 16, sw-resize;}
 .text {cursor: text;}
-.w-resize {cursor: w-resize;}
-.wait {cursor: wait;}
+.w-resize {cursor: url('/assets/cursors/e-resize.png') 16 16, w-resize;}
+.wait {cursor: url('/assets/cursors/busy.png') 16 16, wait;}
 .zoom-in {cursor: zoom-in;}
 .zoom-out {cursor: zoom-out;}
