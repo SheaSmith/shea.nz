@@ -1,4 +1,5 @@
 import { AfterViewChecked, AfterViewInit, Component, OnInit } from '@angular/core';
+import { ThemingService } from './services/theming.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -6,6 +7,8 @@ import { AfterViewChecked, AfterViewInit, Component, OnInit } from '@angular/cor
 })
 export class AppComponent implements AfterViewChecked {
   title = 'PersonalWebsite';
+
+  constructor(private themingService: ThemingService) {}
 
   cursors = {
     'default': {

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
 import { BootstrapComponentsComponent } from './bootstrap-components/bootstrap-components.component';
+import { ThemingService } from './services/theming.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { BootstrapComponentsComponent } from './bootstrap-components/bootstrap-c
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    ThemingService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
