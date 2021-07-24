@@ -933,6 +933,7 @@ option:checked, .custom-select:not([multiple]) > option:hover {
 
 html, body {
     cursor: default;
+    scrollbar-color: $light white;
 }
 
 ::selection {
@@ -944,3 +945,28 @@ html, body {
     background-color: #000000;
     color: white;
 }
+
+// ::-webkit-scrollbar {
+//     background: white url("/assets/nav_texture.png");
+//     background-size: contain;
+//     padding-left: 2px;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//     border: 2px outset white;
+//     box-shadow: 1px 1px 0 0 #000;
+//     background-color: $light;
+// }
+
+// ::-webkit-scrollbar-button  {
+//     border: 2px outset white;
+//     outline: 1px solid black;
+//     background-color: $light;
+//     background-image: url('/assets/dropdown.svg');
+//     background-repeat: no-repeat;
+//     background-position: center;
+// }
+
+// ::-webkit-scrollbar-button:vertical:increment {
+//     transform: rotate(180deg);
+// }
