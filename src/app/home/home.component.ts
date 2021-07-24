@@ -9,7 +9,7 @@ declare var $: any;
 })
 export class HomeComponent implements OnInit {
 
-  @ViewChild('lightbox', { static: false })
+  @ViewChild('lightbox')
   lightbox: ElementRef;
 
   currentImage = '';
