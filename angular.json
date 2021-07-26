@@ -30,7 +30,12 @@
               "src/styles.scss",
               {
                 "input": "src/themes/win95.scss",
-                "bundleName": "assets/themes/win95",
+                "bundleName": "win95",
+                "inject": false
+              },
+              {
+                "input": "src/themes/medieval.scss",
+                "bundleName": "medieval",
                 "inject": false
               }
             ],

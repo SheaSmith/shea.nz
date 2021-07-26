@@ -3,8 +3,13 @@ import { BehaviorSubject, Observable, timer } from 'rxjs';
 
 const themes: Theme[] = [
   {
+    name: 'Medieval',
+    path: 'medieval.css',
+    date: new Date('1400-01-01')
+  },
+  {
     name: 'Windows 95',
-    path: 'assets/themes/win95.css',
+    path: 'win95.css',
     date: new Date('1995-08-24')
   }
 ];

@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Fenwick";
+    src: url("/assets/medieval/fenwick.ttf");
+}
+
+@font-face {
+    font-family: "Goudy";
+    src: url("/assets/medieval/goudy.ttf");
+}
+
+$font-family-sans-serif: "Fenwick", sans-serif;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.bg-info, .bg-secondary {
+    background-color: transparent !important;
+}
+
+.card-header {
+    display: none;
+}
+
+.card {
+    border: none;
+}
+
+body {
+    background-image: url('/assets/medieval/background.jpg');
+    background-size: 100% auto;
+    font-size: 1.5em;
+}
+
+.drop-cap {
+    font-size: 3em;
+    aspect-ratio: 1/1;
+    float: left;
+    color: transparent;
+    background-size: contain;
+}
+
+.drop-cap.d {
+    background-image: url('/assets/medieval/drop-caps/d.svg');
+}
+
+.drop-cap.e {
+    background-image: url('/assets/medieval/drop-caps/e.svg');
+}
+
+.drop-cap.f {
+    background-image: url('/assets/medieval/drop-caps/f.svg');
+}
+
+.drop-cap.s {
+    background-image: url('/assets/medieval/drop-caps/s.svg');
+}
+
+.drop-cap.v {
+    background-image: url('/assets/medieval/drop-caps/v.svg');
+}
