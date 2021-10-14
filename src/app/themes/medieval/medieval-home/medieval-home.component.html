@@ -1,0 +1,119 @@
+<div class="d-flex align-items-center book-container justify-content-center">
+    <div class="aspect-ratio-fixer">
+        <div class="book">
+
+            <div>
+                <div class="leaf"
+                    [@pageFlipped]="{ value: shouldFlip(-2), params: { positiveZIndex: 2, negativeZIndex: 5 + (2 * home.projects.contents.length) + 1 } }"
+                    (@pageFlipped.done)="animating = false">
+                    <div class="page front cover"></div>
+                    <div class="page back"></div>
+                </div>
+                <div class="click-hack" (click)="flipPage(-2)"
+                    [@clickTargetFlipped]="{ value: shouldFlip(-2), params: { positiveZIndex: 2, negativeZIndex: 5 + (2 * home.projects.contents.length) + 1 } }">
+                </div>
+                <div class="leaf-content"
+                    [@pageFlipped]="{ value: shouldFlip(-2), params: { positiveZIndex: 2, negativeZIndex: 5 + (2 * home.projects.contents.length) + 1 } }">
+                    <div class="page-content front cover">
+                    </div>
+                    <div class="page-content back">
+                        <markdown [data]="line" katex *ngFor="let line of home.headline"></markdown>
+
+                        <ul>
+                            <li *ngFor="let link of home.links">
+                                <a [href]="link.url">{{link.title}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="leaf"
+                    [@pageFlipped]="{ value: shouldFlip(-1), params: { positiveZIndex: 4, negativeZIndex: 5 + (2 * home.projects.contents.length) } }"
+                    (@pageFlipped.done)="animating = false">
+                    <div class="page front">
+                    </div>
+                    <div class="page back">
+                    </div>
+                </div>
+                <div class="click-hack" (click)="flipPage(-1)"
+                    [@clickTargetFlipped]="{ value: shouldFlip(-1), params: { positiveZIndex: 4, negativeZIndex: 5 + (2 * home.projects.contents.length) } }">
+                </div>
+                <div class="leaf-content"
+                    [@pageFlipped]="{ value: shouldFlip(-1), params: { positiveZIndex: 4, negativeZIndex: 5 + (2 * home.projects.contents.length)} }">
+                    <div class="page-content front">
+                        <markdown [data]="line" katex *ngFor="let line of home.projects.header"></markdown>
+
+                        <img class="img-fluid" src="/assets/medieval/projects.png" />
+                    </div>
+                    <div class="page-content back page-image">
+                        <img src="/assets/medieval/screenshots/{{home.projects.contents[0].id}}.png" />
+                    </div>
+                </div>
+
+                <ng-container *ngFor="let project of home.projects.contents; let i = index">
+                    <ng-container *ngIf="i != home.projects.contents.length - 1">
+                        <div class="leaf"
+                            [@pageFlipped]="{ value: shouldFlip(i), params: { positiveZIndex: 5 + i, negativeZIndex: 5 + (2 * home.projects.contents.length) - 1 - i } }"
+                            (@pageFlipped.done)="animating = false">
+                            <div class="page front">
+
+                            </div>
+                            <div class="page back">
+                            </div>
+                        </div>
+                        <div class="click-hack" (click)="flipPage(i)"
+                            [@clickTargetFlipped]="{ value: shouldFlip(i), params: { positiveZIndex: 5 + i, negativeZIndex: 5 + (2 * home.projects.contents.length) - 1 - i } }">
+                        </div>
+                        <div class="leaf-content"
+                            [@pageFlipped]="{ value: shouldFlip(i), params: { positiveZIndex: 5 + i, negativeZIndex: 5 + (2 * home.projects.contents.length) - 1 - i } }">
+                            <div class="page-content front">
+                                <h1>{{project.title}}</h1>
+                                <p *ngIf="project.work != null"><em>Developed at <a [href]="project.work.url">{{project.work.title}}</a></em></p>
+                                <markdown [data]="line" katex *ngFor="let line of project.content"></markdown>
+
+                                <ul>
+                                    <li *ngFor="let link of project.links">
+                                        <a [href]="link.url">{{link.title}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="page-content back page-image">
+                                <img src="/assets/medieval/screenshots/{{home.projects.contents[i + 1].id}}.png" />
+                            </div>
+                        </div>
+                    </ng-container>
+                </ng-container>
+
+                <div class="leaf" style="z-index: 3">
+                    <div class="page front">
+                        <h1>{{home.projects.contents[home.projects.contents.length - 1].title}}</h1>
+                        
+                        <markdown [data]="line" katex
+                            *ngFor="let line of home.projects.contents[home.projects.contents.length - 1].content">
+                        </markdown>
+
+                        <ul>
+                            <li *ngFor="let link of home.projects.contents[home.projects.contents.length - 1].links">
+                                <a [href]="link.url">{{link.title}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="leaf first" style="z-index: 1">
+                    <div class="page front last">
+                        Dummy page. Not visible
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- https://zoaibkhan.com/blog/angular-animations-create-a-card-flip-animation/ -->
+</div>
+
+<img src="/assets/medieval/table.jpg" class="table" />
+
+<div class="floor"></div>

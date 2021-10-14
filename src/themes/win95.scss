@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('../../node_modules/prismjs/themes/prism-twilight.css');
+
 $blue: #0000a8; // #337ab7
 $green: #00a857;
 $cyan: #57a8a8;
@@ -31,7 +33,7 @@ $emphasized-link-hover-darken-percentage: 0%;
 
 @font-face {
     font-family: "Fixedsys";
-    src: url("/assets/fixedsys.ttf") format("truetype");
+    src: url("/assets/win95/fixedsys.ttf") format("truetype");
 }
 
 $font-family-sans-serif: "Microsoft Sans Serif", sans-serif;
@@ -80,9 +82,9 @@ $input-focus-box-shadow: none;
 
 $btn-padding-x: 1.25rem;
 
-$custom-checkbox-indicator-icon-checked: url("/assets/checkmark.svg");
-$custom-radio-indicator-icon-checked: url("/assets/radio.svg");
-$custom-select-indicator: url("/assets/dropdown.svg");
+$custom-checkbox-indicator-icon-checked: url("/assets/win95/checkmark.svg");
+$custom-radio-indicator-icon-checked: url("/assets/win95/radio.svg");
+$custom-select-indicator: url("/assets/win95/dropdown.svg");
 $custom-control-indicator-checked-color: black;
 
 $custom-control-indicator-disabled-bg: $light;
@@ -132,6 +134,7 @@ hr {
     border-width: thin;
     border-style: outset;
     border-color: black !important;
+    color: black;
 }
 
 .form-control {
@@ -362,7 +365,7 @@ hr {
 
 .custom-range::-moz-range-thumb:active,
 .custom-range:disabled::-moz-range-thumb {
-    background-image: url("/assets/slider_texture.png");
+    background-image: url("/assets/win95/slider_texture.png");
     background-color: $light;
     background-repeat: repeat;
     background-clip: border-box;
@@ -370,7 +373,7 @@ hr {
 
 .custom-range::-webkit-slider-thumb:active,
 .custom-range:disabled::-webkit-slider-thumb {
-    background-image: url("/assets/slider_texture.png");
+    background-image: url("/assets/win95/slider_texture.png");
     background-color: $light;
     background-repeat: repeat;
     background-clip: border-box;
@@ -378,7 +381,7 @@ hr {
 
 .custom-range::-ms-thumb:active,
 .custom-range:disabled::-ms-thumb {
-    background-image: url("/assets/slider_texture.png");
+    background-image: url("/assets/win95/slider_texture.png");
     background-color: $light;
     background-repeat: repeat;
     background-clip: border-box;
@@ -515,7 +518,7 @@ hr {
 .alert-warning::before {
     left: 36px;
     position: absolute;
-    content: url("/assets/icons/msg_warning-0.png");
+    content: url("/assets/win95/icons/msg_warning-0.png");
 }
 
 .alert-warning {
@@ -528,7 +531,7 @@ hr {
 .alert-danger::before {
     left: 36px;
     position: absolute;
-    content: url("/assets/icons/msg_error-0.png");
+    content: url("/assets/win95/icons/msg_error-0.png");
 }
 
 .alert-danger {
@@ -541,7 +544,7 @@ hr {
 .alert-success::before {
     left: 36px;
     position: absolute;
-    content: url("/assets/icons/check-0.png");
+    content: url("/assets/win95/icons/check-0.png");
 }
 
 .alert-success {
@@ -557,7 +560,7 @@ hr {
 .alert-light::before {
     left: 36px;
     position: absolute;
-    content: url("/assets/icons/msg_information-0.png");
+    content: url("/assets/win95/icons/msg_information-0.png");
 }
 
 .alert-info {
@@ -589,7 +592,7 @@ hr {
 }
 
 .close::before {
-    background: url("/assets/close.svg");
+    background: url("/assets/win95/close.svg");
     background-size: 10px 10px;
     height: 16px;
     width: 16px;
@@ -694,7 +697,7 @@ button.close {
 .bg-warning .toast-body::before {
     left: 10px;
     position: absolute;
-    content: url("/assets/icons/msg_warning-0.png");
+    content: url("/assets/win95/icons/msg_warning-0.png");
 }
 
 .bg-success .card-body::before,
@@ -703,7 +706,7 @@ button.close {
 .bg-success .toast-body::before {
     left: 10px;
     position: absolute;
-    content: url("/assets/icons/check-0.png");
+    content: url("/assets/win95/icons/check-0.png");
 }
 
 .bg-danger .card-body::before,
@@ -712,7 +715,7 @@ button.close {
 .bg-danger .toast-body::before {
     left: 10px;
     position: absolute;
-    content: url("/assets/icons/msg_error-0.png");
+    content: url("/assets/win95/icons/msg_error-0.png");
 }
 
 .bg-info .card-body::before,
@@ -729,7 +732,7 @@ button.close {
 .bg-dark .toast-body::before {
     left: 10px;
     position: absolute;
-    content: url("/assets/icons/msg_information-0.png");
+    content: url("/assets/win95/icons/msg_information-0.png");
 }
 
 .bg-warning .card-body,
@@ -851,12 +854,16 @@ button.close {
     transform: scale(0.9, 0.9);
 }
 
-pre {
+pre, code {
     color: white;
-    background-color: black;
-    font-size: $font-size-base;
-    padding: 0.2rem;
-    margin: 0.5rem;
+    background-color: black !important;
+    font-size: $font-size-base !important;
+    padding: 0.2rem !important;
+    margin: 0.5rem !important;
+    font-family: $font-family-monospace !important;
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 kbd {
@@ -898,7 +905,7 @@ var {
 }
 
 .navbar .nav-item.active .nav-link {
-    background-image: url("/assets/nav_texture.png");
+    background-image: url("/assets/win95/nav_texture.png");
 }
 
 .cursor-pointer {
@@ -934,6 +941,7 @@ option:checked, .custom-select:not([multiple]) > option:hover {
 html, body {
     cursor: default;
     scrollbar-color: $light white;
+    height: 100%;
 }
 
 ::selection {
@@ -947,7 +955,7 @@ html, body {
 }
 
 // ::-webkit-scrollbar {
-//     background: white url("/assets/nav_texture.png");
+//     background: white url("/assets/win95/nav_texture.png");
 //     background-size: contain;
 //     padding-left: 2px;
 // }
@@ -962,7 +970,7 @@ html, body {
 //     border: 2px outset white;
 //     outline: 1px solid black;
 //     background-color: $light;
-//     background-image: url('/assets/dropdown.svg');
+//     background-image: url('/assets/win95/dropdown.svg');
 //     background-repeat: no-repeat;
 //     background-position: center;
 // }

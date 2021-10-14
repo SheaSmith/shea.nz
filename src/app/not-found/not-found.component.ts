@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemingService } from '../services/theming.service';
 
 @Component({
   selector: 'app-not-found',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotFoundComponent implements OnInit {
 
-  constructor() { }
+  constructor(public themingService: ThemingService) { }
 
   ngOnInit() {
   }

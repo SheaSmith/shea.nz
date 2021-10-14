@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Home } from '../models/home';
+import { PageService } from '../services/page.service';
+import { ThemingService } from '../services/theming.service';
 
-declare var $: any;
 
 @Component({
   selector: 'app-home',
@@ -9,22 +11,13 @@ declare var $: any;
 })
 export class HomeComponent implements OnInit {
 
-  @ViewChild('lightbox')
-  lightbox: ElementRef;
+  public home: Home = null;
 
-  currentImage = '';
-
-  constructor() { }
-
-  ngOnInit() {
+  constructor(public themingService: ThemingService, private pageService: PageService) {
+    this.pageService.getHome().subscribe(s => this.home = s);
   }
 
-  imageClick($event) {
-    const target = $event.target || $event.srcElement || $event.currentTarget;
-    this.currentImage = target.attributes.src.nodeValue;
-    
-    console.log(this.lightbox)
-    $(this.lightbox.nativeElement).modal();
+  ngOnInit() {
   }
 
 }

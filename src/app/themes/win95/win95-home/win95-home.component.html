@@ -1,0 +1,99 @@
+<div class="container my-5">
+  <div class="card bg-info">
+    <div class="card-header icon-welcome">Welcome <button class="close" disabled></button></div>
+    <div class="card-body">
+
+      <markdown [data]="line" katex *ngFor="let line of home.headline"></markdown>
+
+      <a *ngFor="let link of home.links" class="btn btn-primary d-inline-flex align-items-center mr-2"
+        [href]="link.url"><img src="/assets/win95/icons/{{link.id}}.png" class="mr-2" /> <span>{{link.title}}</span></a>
+    </div>
+  </div>
+
+  <div class="alert alert-info mt-4 mb-3">
+    <markdown [data]="line" katex *ngFor="let line of home.projects.header"></markdown>
+  </div>
+
+  <div class="row no-gutters mb-4">
+    <ng-container *ngFor="let project of home.projects.contents; let i = index">
+
+      <div class="row no-gutters" *ngIf="project.style == 'large'">
+        <div class="col-12 col-lg-8 mb-2 order-{{i % 2}}" [class.pr-lg-3]="i % 2 == 0">
+          <div class="card bg-secondary h-100">
+            <div class="card-header icon-{{project.id}}">{{project.title}} <button class="close" disabled></button>
+            </div>
+            <div class="card-body">
+              <div class="jumbotron no-gutters m-0 p-1">
+                <img class="mw-100 cursor-pointer" (click)="imageClick($event)"
+                  src="/assets/win95/screenshots/{{project.id}}.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 mb-2" [class.pr-lg-3]="i % 2 != 0">
+          <div class="card bg-secondary h-100">
+            <div class="card-header icon-{{project.id}}">{{project.title}} <button class="close" disabled></button>
+            </div>
+            <div class="card-body">
+              <p class="d-flex align-items-center" *ngIf="project.work">
+                <img class="mr-2" src="/assets/win95/icons/briefcase-3.png" />
+                <span>Developed at <a [href]="project.work.url">{{project.work.url}}</a></span>
+              </p>
+
+              <markdown [data]="line" katex *ngFor="let line of project.content"></markdown>
+
+              <a *ngFor="let link of project.links" class="btn btn-primary d-inline-flex align-items-center mr-2"
+                [href]="link.url"><img src="/assets/win95/icons/{{link.id}}.png" class="mr-2" />
+                <span>{{link.title}}</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ng-container *ngIf="project.style == 'small'">
+        <div class="col-12 col-lg-4 mb-2" [class.px-lg-3]="(i + 2) % 3 == 0">
+          <div class="card bg-secondary h-100">
+            <div class="card-header icon-{{project.id}}">{{project.title}} <button class="close" disabled></button>
+            </div>
+            <div class="card-body">
+              <div class="card-image-top jumbotron no-gutters m-0 p-1 mb-2">
+                <img class="mw-100 cursor-pointer" (click)="imageClick($event)"
+                  src="/assets/win95/screenshots/{{project.id}}.jpg" />
+              </div>
+              <p class="d-flex align-items-center" *ngIf="project.work">
+                <img class="mr-2" src="/assets/win95/icons/briefcase-3.png" />
+                <span>Developed at <a [href]="project.work.url">{{project.work.title}}</a></span>
+              </p>
+
+              <markdown [data]="line" katex *ngFor="let line of project.content"></markdown>
+
+              <a *ngFor="let link of project.links" class="btn btn-primary d-inline-flex align-items-center mr-2"
+                [href]="link.url"><img src="/assets/win95/icons/{{link.id}}.png" class="mr-2" />
+                <span>{{link.title}}</span></a>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+
+    </ng-container>
+
+  </div>
+
+</div>
+
+<div #lightbox class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title icon-image">View image</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="{{currentImage}}" class="mw-100">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,170 @@
+{
+    "headline": [
+        "# Hi!",
+        "I'm Shea Smith, a New Zealand software engineer with professional experience in developing Android apps, ASP.NET Framework APIs and Angular 2+ frontends.",
+        "Outside of this, I also enjoy writing (and tinkering!) with software in my free time. This has given me the opportunity to try out a variety of (often obscure) frameworks and technologies, along with allowing me to dabble in UI design and managing my own Linux based servers."
+    ],
+    "links": [
+        {
+            "id": "github",
+            "title": "Github",
+            "url": "https://github.com/SheaSmith"
+        },
+        {
+            "id": "linkedin",
+            "title": "LinkedIn",
+            "url": "https://www.linkedin.com/in/shea-smith-8a14331b2/"
+        },
+        {
+            "id": "email",
+            "title": "Email Me",
+            "url": "mailto:shea@shea.nz"
+        }
+    ],
+    "projects": {
+        "header": [
+            "# Projects",
+            "This is a selection of both my personal projects and some public projects that I've contributed to professionally. My personal projects tend to be focused around exploring new frameworks or technologies, hence their rather diverse nature!"
+        ],
+        "contents": [
+            {
+                "id": "nzxmltv",
+                "style": "large",
+                "title": "NZXMLTV",
+                "content": [
+                    "NZXMLTV is a custom XML based EPG for use in software like Plex, Kodi, Emby or Jellyfin.",
+                    "It takes program guide data from Freeview, SKY and some overseas IPTV providers. This is then combined with metadata from a variety of sources, both from NZ and international sources, to provide images and other rich metadata about each programme. This is in conjunction with hundreds of lines of hand crafted logic dealing with dozens of unique edgecases for New Zealand.",
+                    "NZXMLTV has around 1,000 unique users and transfers nearly 300 GB of data a month (according to Cloudflare analytics), providing all of them with a quality of programme guide without parallels in New Zealand."
+                ],
+                "links": [
+                    {
+                        "id": "website",
+                        "title": "Website",
+                        "url": "https://nzxmltv.com/"
+                    }
+                ]
+            },
+            {
+                "id": "meteorology",
+                "style": "large",
+                "title": "Meteorology",
+                "content": [
+                    "Meteorology is a weather app for use with Weather Underground PWSs (Personal Weather Stations). It uses the Weather Underground API to display the current conditions, a detailed forecast and extensive historical data.",
+                    "The app was built with intuitiveness and 'glancability' in mind. It presents important information, like the temperature, in large text, along with elements like indiciative backgrounds for the type of weather. However, detailed data is still present and available at a tap."
+                ],
+                "links": [
+                    {
+                        "id": "github-source",
+                        "title": "Github",
+                        "url": "https://github.com/SheaSmith/Meteorology"
+                    },
+                    {
+                        "id": "google-play",
+                        "title": "Google Play",
+                        "url": "https://play.google.com/store/apps/details?id=me.sheasmith.weatherstation"
+                    }
+                ]
+            },
+            {
+                "id": "telegraphy",
+                "style": "large",
+                "title": "Telegraphy",
+                "content": [
+                    "Telegraphy is an all-in-one app for listening to New Zealand radio. It collates stations from the two major radio companies in New Zealand, along with a variety of smaller, independent stations.",
+                    "Additionally, all stations display the currently playing song, along with prominent album art. Data is also pulled from Mediaworks and NZME for getting the current show and song progress for their respective stations, allowing the app to more closely resemble a traditional viewing experience.",
+                    "Finally, the app also incorporates regional feeds, allowing a user to hear the stations that are the most relevant to them."
+                ],
+                "links": [
+                    {
+                        "id": "github-source",
+                        "title": "Github",
+                        "url": "https://github.com/SheaSmith/Telegraphy"
+                    },
+                    {
+                        "id": "google-play",
+                        "title": "Google Play",
+                        "url": "https://play.google.com/store/apps/details?id=me.sheasmith.nzradio"
+                    }
+                ]
+            },
+            {
+                "id": "checkin-19",
+                "style": "small",
+                "title": "CHECKIN-19",
+                "work": {
+                    "title": "Digital Stock",
+                    "url": "https://digitalstock.co.nz/"
+                },
+                "content": [
+                    "CHECKIN-19 was originally developed as a safe and easy-to-use contactless visitor register system. We built the first version of the app in late April in under two weeks and we soon saw usage explode to 250,000 check-ins a week by the end of Level 2.",
+                    "It is now expanding to become a more general purpose visitor management solution, while also enabling COVID tracing in other countries."
+                ],
+                "links": [
+                    {
+                        "id": "website",
+                        "title": "Website",
+                        "url": "https://checkin-19.com/"
+                    },
+                    {
+                        "id": "news",
+                        "title": "ODT Article",
+                        "url": "https://www.odt.co.nz/regions/southland/no-touch-logging-developed"
+                    }
+                ]
+            },
+            {
+                "id": "k-plus",
+                "style": "small",
+                "title": "K+",
+                "content": [
+                    "K+ is a third party app for a school portal type that is commonly used in many schools. It uses a combination of undocumented APIs and HTML scraping in order to display information ranging from NCEA results to timetables to daily notices.",
+                    "K+ was a multi-year project, with the first iteration starting in 2016, based fully off HTML scraping, before moving to primarily using the more stable API, along with a visual refresh."
+                ],
+                "links": [
+                    {
+                        "id": "github-source",
+                        "title": "Github",
+                        "url": "https://github.com/SheaSmith/k-plus"
+                    },
+                    {
+                        "id": "google-play",
+                        "title": "Google Play",
+                        "url": "https://play.google.com/store/apps/details?id=sheasmith.me.betterkamar"
+                    },
+                    {
+                        "id": "api",
+                        "title": "API Documentation",
+                        "url": "https://documenter.getpostman.com/view/1593669/S1TU1d8Y?version=latest"
+                    }
+                ]
+            },
+            {
+                "id": "remote",
+                "style": "small",
+                "title": "Remote Control",
+                "content": [
+                    "Remote Control is a work-in-progress app that utilises the IR sensor on many Android phones to control household devices (primarily TVs and related equipment). It was designed with the goal of being simple, uncluttered and true to the original remote controls.",
+                    "It has a modular design, which allows remotes to be defined in JSON files, rather than hardcoded into the app. Future goals include user upload of files, and the ability to remember remote 'states' (e.g. store current temperature)."
+                ],
+                "links": [
+                    {
+                        "id": "github-source",
+                        "title": "Github",
+                        "url": "https://github.com/SheaSmith/Remote"
+                    }
+                ]
+            }
+        ]
+    },
+    "markdownTest": [
+        "Markdown test\n=========",
+        "Header 2\n-------",
+        "First Header | Second Header\n----------- | --------------\nContent Cell 1 | Content Cell 2",
+        "```java\npublic static void main(String[] args) {\n\nSystem.out.println(args[0]);\n\nthrow new Exception();\n\n}\n\n```",
+        "- [x] Test\n- [ ] Test 2",
+        "\\$\\frac{1}{\\Bigl(\\sqrt{\\phi \\sqrt{5}}-\\phi\\Bigr) e^{\\frac25 \\pi}} = 1+\\frac{e^{-2\\pi}} {1+\\frac{e^{-4\\pi}} {1+\\frac{e^{-6\\pi}} {1+\\frac{e^{-8\\pi}} {1+\\cdots} } } }\\$",
+        "> block. quote.",
+        "![Wincows 10](https://venturebeat.com/wp-content/uploads/2018/11/windows-10-2018-insider-wallpaper.jpg?fit=2000%2C1000&strip=all \"title\")",
+        "***"
+    ]
+}

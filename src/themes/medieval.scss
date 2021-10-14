@@ -1,3 +1,5 @@
+@import url('../../node_modules/prismjs/themes/prism-solarizedlight.css');
+
 @font-face {
     font-family: "Fenwick";
     src: url("/assets/medieval/fenwick.ttf");
@@ -9,51 +11,14 @@
 }
 
 $font-family-sans-serif: "Fenwick", sans-serif;
+$font-size-base: 2rem;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-.bg-info, .bg-secondary {
-    background-color: transparent !important;
+.table td, .table th {
+    border: 1px solid rgba(255, 0, 0, 0.3) !important;
 }
 
-.card-header {
-    display: none;
-}
-
-.card {
-    border: none;
-}
-
-body {
-    background-image: url('/assets/medieval/background.jpg');
-    background-size: 100% auto;
-    font-size: 1.5em;
-}
-
-.drop-cap {
-    font-size: 3em;
-    aspect-ratio: 1/1;
-    float: left;
-    color: transparent;
-    background-size: contain;
-}
-
-.drop-cap.d {
-    background-image: url('/assets/medieval/drop-caps/d.svg');
-}
-
-.drop-cap.e {
-    background-image: url('/assets/medieval/drop-caps/e.svg');
-}
-
-.drop-cap.f {
-    background-image: url('/assets/medieval/drop-caps/f.svg');
-}
-
-.drop-cap.s {
-    background-image: url('/assets/medieval/drop-caps/s.svg');
-}
-
-.drop-cap.v {
-    background-image: url('/assets/medieval/drop-caps/v.svg');
+html, body {
+    font-size: min(2.5vh, 1.5vw);
 }
