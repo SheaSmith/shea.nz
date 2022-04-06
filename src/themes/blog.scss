@@ -1,0 +1,40 @@
+@import url('../../node_modules/prismjs/themes/prism-okaidia.css');
+
+@font-face {
+    font-family: "Roboto Slab";
+    src: url("/assets/blog/roboto-slab.ttf");
+}
+
+@font-face {
+    font-family: "PT Serif";
+    src: url("/assets/blog/ptserif-bolditalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "PT Serif";
+    src: url("/assets/blog/ptserif-bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PT Serif";
+    src: url("/assets/blog/ptserif-italic.ttf");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "PT Serif";
+    src: url("/assets/blog/ptserif-regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-family-serif: "PT Serif", sans-serif;
+$font-family-base: $font-family-serif;
+$headings-font-family: "Roboto Slab, sans-serif";
+
+@import "../../node_modules/bootstrap/scss/bootstrap";

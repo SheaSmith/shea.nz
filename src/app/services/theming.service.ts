@@ -45,7 +45,7 @@ export class ThemingService {
   }
 }
 
-class StyleManager {
+export class StyleManager {
   /**
    * Set the stylesheet with the specified key.
    */

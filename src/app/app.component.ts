@@ -8,5 +8,5 @@ import { ThemingService } from './services/theming.service';
 export class AppComponent {
   title = 'PersonalWebsite';
 
-  constructor(private themingService: ThemingService) {}
+  constructor() {}
 }

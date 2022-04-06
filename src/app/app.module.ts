@@ -13,6 +13,7 @@ import { MarkdownModule, MarkedOptions, MarkedRenderer } from 'ngx-markdown';
 import { Win95NotFoundComponent } from './themes/win95/win95-not-found/win95-not-found.component';
 import { MedievalHomeComponent } from './themes/medieval/medieval-home/medieval-home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BootstrapComponentsComponent,
     Win95HomeComponent,
     Win95NotFoundComponent,
-    MedievalHomeComponent
+    MedievalHomeComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,

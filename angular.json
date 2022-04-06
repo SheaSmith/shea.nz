@@ -38,6 +38,11 @@
                 "input": "src/themes/medieval.scss",
                 "bundleName": "medieval",
                 "inject": false
+              },
+              {
+                "input": "src/themes/blog.scss",
+                "bundleName": "blog",
+                "inject": false
               }
             ],
             "scripts": [
