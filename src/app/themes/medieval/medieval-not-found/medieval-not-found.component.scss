@@ -1,0 +1,26 @@
+p::first-letter {
+  background-image: url("/assets/medieval/drop-caps/e.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-center: center center;
+  float: left;
+  font-size: 8rem;
+  line-height: 0.35;
+  color: transparent;
+  margin-right: 0.05em;
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/assets/medieval/floor.jpg');
+  background-size: cover;
+  overflow: hidden;
+}
+
+.container {
+  background-image: url('/assets/medieval/404-bg.png');
+  min-height: 100vh;
+  padding: 150px;
+  font-size: 1.5rem;
+}

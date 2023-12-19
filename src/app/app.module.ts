@@ -14,6 +14,7 @@ import { Win95NotFoundComponent } from './themes/win95/win95-not-found/win95-not
 import { MedievalHomeComponent } from './themes/medieval/medieval-home/medieval-home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BlogComponent } from './blog/blog.component';
+import { MedievalNotFoundComponent } from './themes/medieval/medieval-not-found/medieval-not-found.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BlogComponent } from './blog/blog.component';
     Win95HomeComponent,
     Win95NotFoundComponent,
     MedievalHomeComponent,
-    BlogComponent
+    BlogComponent,
+    MedievalNotFoundComponent
   ],
   imports: [
     BrowserModule,

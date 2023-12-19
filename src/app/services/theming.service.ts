@@ -5,7 +5,7 @@ const themes: Theme[] = [
   {
     name: 'Medieval',
     path: 'medieval.css',
-    date: new Date('1400-01-01')
+    date: new Date('1360-07-15')
   },
   {
     name: 'Windows 95',
@@ -58,8 +58,6 @@ export class StyleManager {
         s.complete();
       };
 
-      // onload only works once, so if the user changes the theme wait 5 seconds then call it manually
-      // Not ideal but needed to update things like favicon and graphs which rip colors out of css
       timer(5000).subscribe(() => {
         if (!s.closed) {
           s.next(true);
